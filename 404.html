@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial Black', sans-serif;
+      overflow: hidden;
+    }
+
+    .glow {
+      font-size: 12vw;
+      color: #ff0000;
+      text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000,
+        0 0 160px #ff0000;
+      animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 1;
+        text-shadow:
+          0 0 5px #ff0000,
+          0 0 10px #ff0000,
+          0 0 20px #ff0000,
+          0 0 40px #ff0000;
+      }
+      100% {
+        opacity: 0.6;
+        text-shadow:
+          0 0 20px #ff0000,
+          0 0 40px #ff0000,
+          0 0 60px #ff0000,
+          0 0 100px #ff0000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow">404</div>
+</body>
+</html>
